@@ -1,0 +1,249 @@
+body {
+  background: #131313;
+  padding: 0;
+}
+
+#animated-mouse-circle {
+  width: 45px;
+  height: 45px;
+  background: #eb5939;
+  border-radius: 50%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+   transform: translate(-50%, -50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 99999999;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out,  transform 0.20s linear;
+}
+
+
+.hero_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+}
+/* .header {
+    width: 100%;
+    max-width: 1800px;
+    margin: 50px auto;
+} */
+
+
+.header_logo {
+  line-height: 0;
+  width: 100%;
+  max-width: max-content;
+}
+
+.header_logo svg path {
+  transition: fill .4s cubic-bezier(.165, .84, .44, 1);
+}
+
+.header_logo:hover svg path {
+  fill: #eb5939;
+}
+
+a.link-logo:hover {
+  text-decoration: none;
+}
+
+a.link-logo {
+  display: inline-flex;
+  width: 55px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+  transition: transform 0.20s ease-out;
+}
+
+.social_link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  will-change: transform;
+  transition: transform 0.20s ease-out;
+
+}
+li.social {
+    margin-bottom: 15px;
+}
+.header-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: max-content;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.herder-bottem ul, .header_menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+a.desc {
+    text-decoration: none;
+}
+a .header_menu_item_link {
+    font-size: 17px;  
+    font-family: poppins;
+} 
+.header_menu_item_link__active {
+    color: #b8ac9980;
+}
+.footer_socials a:hover svg path {
+    fill: #eb5939;
+}
+.header_menu_item_inner {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: 20px; /* matches text height */
+}
+.header_menu_item_link {
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  will-change: transform;
+}
+.header_menu_item_link__deep {
+  transform: translateY(0px);
+    padding-bottom:10px;
+    color: #b8ac9980;
+    transition: transform 0.40s ease-out;
+}
+li.header_menu_item.js-cursor-contract {
+    padding: 0 0 10px;
+    text-align: end;
+    text-transform: uppercase;
+}
+.header_menu_item_link__active {
+  position: absolute;
+  left: 0;
+  top: 20px;             
+  transform: translateY(0px);
+      color: #b7ab98;
+      transition: transform 0.40s ease-out;
+
+}
+.header_menu_item:hover .header_menu_item_link__deep {
+  transform: translateY(-25px);
+}
+  
+.header_menu_item:hover .header_menu_item_link__active {
+  transform: translateY(-20px);
+}
+.header-main:hover #animated-mouse-circle {
+ width: 0px;
+ height: 0px;
+
+}
+.hero-content:hover #animated-mouse-circle,.about-content:hover #animated-mouse-circle{
+  width: 100px;
+ height: 100px;
+}
+.hero-content #animated-mouse-circle{
+  width: 0px;
+ height: 0px;
+}
+#hero-bg-video {
+    width: 100%;
+}
+.hero {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-main {
+    position: relative;
+    z-index: 0;
+}.hero-content {
+    position: absolute;
+    top: 0;
+    color: #b7ab98;
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #b7ab98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}h6.hero-subtitle {
+    font-size: 20px;
+    font-family: poppins;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.hero-content:hover::before {
+  background: #000; 
+}
+  
+h1.hero-title {
+    text-align: center;
+    font-size: 155px;
+    padding: 0;
+    line-height: 130px;
+    text-transform: uppercase;
+    font-family: poppins;
+    font-weight: 500;
+    margin: 0;
+}
+span.line {
+    line-height: 0 !important;
+}
+
+span.line.oringe {
+color:  #eb5939;
+}
+
+
+
+
+
+
+
+
+
+
+.about-line {
+    color: #b7ab98;
+    font-size: 88px;
+    font-family: poppins;
+    line-height: 100px;
+    font-weight: 700;
+} .about {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.about_content_label {
+    padding: 0;
+    margin: 0 0 60px;
+    color: #eb5939;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 20px;
+    font-family: poppins;
+}
+.about-line strong {
+ color: #eb5939;
+}
+.about-inner {
+    margin: 200px 0 0;
+}
